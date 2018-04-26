@@ -115,7 +115,7 @@ exports.getTasksByUser = function(req, res, userId) {
 // };
 
 function requestTasksByUserID(userID) {
-  Task('https://cryptic-inlet-78225.herokuapp.com/api/task/user/2', { json: true }, (err, res, body) => {
+  Task('https://cryptic-inlet-78225.herokuapp.com/api/task/user/' + userID, { json: true }, (err, res, body) => {
     if (err) { return console.log(err); }
     console.log("CHRISTIAN" + JSON.stringify(body));
     getTasksByUserIDFromRequest(body);

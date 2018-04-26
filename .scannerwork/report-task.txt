@@ -1,0 +1,7 @@
+organization=hectorhf-github
+projectKey=OMGTODOLIST
+serverUrl=https://sonarcloud.io
+serverVersion=7.1.1.10702
+dashboardUrl=https://sonarcloud.io/dashboard/index/OMGTODOLIST
+ceTaskId=AWMCeN4yXhRh5gha-Clk
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWMCeN4yXhRh5gha-Clk

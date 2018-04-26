@@ -1,6 +1,8 @@
 var router = require('express').Router();
 var controller = require('./reportController');
 
+router.param('userId', controller.paramsbyUser);
+
 //var auth = require('../../../auth/auth');
 //var authController = require('../../../auth/report/tasks/controller');
 
@@ -8,7 +10,7 @@ var controller = require('./reportController');
 
 // setup boilerplate route jsut to satisfy a request
 // for building
-router.param('2', controller.params);
+//router.param('/:userId', controller.params);
 
 // GET the tasks info
 router.route('/task').get(controller.getTasks)

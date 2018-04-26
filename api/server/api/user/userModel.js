@@ -11,12 +11,8 @@ var userSchema = new Schema({
   email: {
     type: String,
     required: true
-  },
-  // dont store the password as plain text
-  password: {
-    type: String,
-    required: true
   }
+  // dont store the password as plain text
 });
 
 userSchema.pre('save', function(next) {

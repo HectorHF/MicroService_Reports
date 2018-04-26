@@ -2,6 +2,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var bcrypt = require('bcrypt');
 
+var Habit = require('request');
+var id;
+
 var reportSchema = new Schema({});
 
 reportSchema.methods = {
